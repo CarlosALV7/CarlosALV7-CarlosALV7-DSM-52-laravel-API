@@ -1,0 +1,41 @@
+### Obtener citas
+GET http://127.0.0.1:8000/api/citas
+Accept: application/json
+Authorization: Bearer 17|crstwfYUevjPdOCrZvJkZ3ndA9NkZhjk9L2jLlXm
+
+### Generar citas
+GET http://127.0.0.1:8000/api/citas/3
+Accept: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+### Crear una cita
+POST http://127.0.0.1:8000/api/citas
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 17|crstwfYUevjPdOCrZvJkZ3ndA9NkZhjk9L2jLlXm
+
+
+{
+    "fecha":"12-10-2022"
+    , "estatus":"asistio"
+    ,  "descripcion": "234rfvbrntymuurnteec"
+    , "usuario_id": 1
+}
+
+### Editar un producto
+PUT http://127.0.0.1:8000/api/citas/3
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+{
+    "categoria_id":2
+    , "subcategoria_id":3
+    , "unidad_medida_id":4
+    , "producto":"Producto modificado a través de API"
+    , "costo_unitario":15.5
+    , "precio_unitario":22.5
+    , "existencias":1000.5
+    , "descripcion":"Producto nuevo modificado a través de llamada a API"
+    , "estatus":"inactivo"
+}
